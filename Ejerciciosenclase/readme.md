@@ -1,2 +1,2 @@
-#}  Carpeta de ejercicios en clase
+#  Carpeta de ejercicios en clase
 ### Mis archivos
