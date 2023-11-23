@@ -1,0 +1,13 @@
+1  inicio 
+2  definir/declarar (los ingredientes que necesito para resolver el problema) (una variable nunca puede iniciar con un número) 
+(snakecase, convención, las palabras no pueden llevar espacio, llevan guión bajo o (camelcase, ponemos la siguiente palabra en mayuscula, 
+en lugar de guion bajo, uppercase, usamos mayuscula al inicio) 
+año_nac(int), año_act(int), edad(int) nombre (str) "string" a "char"
+3  asignar ( un valor) año_ac=2023
+4  escibir o introducir pregunta (todo lo que quiero que salga en la pantalla debe de ir entre comillas, "Ingresa tu nombre"
+5  asignar nombre 
+6  escribir  "Ingresa tu año de nacimiento", nombre 
+7  asigno año_nac
+8  edad=año_act-año_nac
+9  escribir nombre del usuario "Tu edad es de ",edad,"años"
+10 fin 
