@@ -1,0 +1,59 @@
+//procedimiento
+Funcion PedirNumero()
+	Escribir "ingresa un número"
+FinFuncion
+
+//funcion
+//nombre de la variable que almacenará el valor a devolver, nombre de la función
+Funcion multi <- MultiplicarDosNumeros(num1,num2)
+	multi <- (num1*num2)
+FinFuncion
+
+Algoritmo calcular_mult
+  	Definir num1,num2,res,operador Como Entero
+	
+  	num1<-azar(9)+1
+	num2<-azar(99)+1
+	operador<-azar(3)+1
+    
+	Segun operador Hacer
+		1:
+			Escribir num1," * ",num2
+			Leer res 
+			si res = num1*num2 entonces 
+				Escribir "Correcto"
+			SiNo 
+			    Escribir "Incorrecto"
+			FinSi
+			
+		2:
+			Escribir num1," / ",num2
+			Leer res 
+			si res = num1/num2 entonces 
+				Escribir "Correcto"
+			SiNo 
+			    Escribir "Incorrecto"
+			FinSi
+		3:
+			Escribir num1," + ",num2
+			Leer res 
+			si res = num1+num2 entonces 
+				Escribir "Correcto"
+			SiNo 
+			    Escribir "Incorrecto"
+			FinSi
+		4:
+			Escribir num1," - ",num2
+			Leer res 
+			si res = num1-num2 entonces 
+				Escribir "Correcto"
+			SiNo 
+			    Escribir "Incorrecto"
+			FinSi
+		De Otro Modo:
+			Escribir"Operador invalido"
+	Fin Segun 
+	
+	
+	
+FinAlgoritmo
