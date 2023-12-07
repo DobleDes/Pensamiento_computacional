@@ -1,0 +1,82 @@
+Funcion PedirNumero()
+	Escribir 'ingresa un número'
+FinFuncion
+
+// funcion
+// nombre de la variable que almacenará el valor a devolver, nombre de la función
+Funcion multi <- MultiplicarDosNumeros(num1,num2)
+	multi <- (num1*num2)
+FinFuncion
+
+Algoritmo calcular_mult
+	Definir num1,num2,operador,puntos,contador Como Entero
+	Definir repeticion Como Logico
+	Definir res Como Real
+	Para j<-1 Hasta 5 Hacer
+		num1 <- azar(99)+1
+		num2 <- azar(9)+1
+		operador <- azar(3)+1
+		Segun operador  Hacer
+			1:
+				Mientras repeticion=Falso Hacer
+					Escribir num1,' * ',num2
+					Leer res
+					Si res=num1*num2 Entonces
+						Escribir 'Correcto'
+						puntos <- puntos+1
+						repeticion <- Verdadero
+					SiNo
+						Escribir 'Incorrecto'
+					FinSi
+				FinMientras
+				Borrar Pantalla
+			2:
+				Repetir
+					Escribir num1,' / ',num2
+					Leer res
+					Si res=num1/num2 Entonces
+						Escribir 'Correcto'
+						puntos <- puntos+1
+						
+					SiNo
+						Escribir 'Incorrecto'
+					FinSi
+				Hasta Que res=num1/num2
+				
+				Borrar Pantalla
+			3:
+				Escribir 'Tienes 3 oportunides'
+				Para i<-1 Hasta 3 Hacer
+					Escribir 'Oportunidad ',i
+					Escribir num1,' + ',num2
+					Leer res
+					Si res=num1+num2 Entonces
+						Escribir 'Correcto'
+						puntos <- puntos+1
+						i <- 5
+					SiNo
+						Escribir 'Incorrecto'
+					FinSi
+				FinPara
+				Borrar Pantalla
+			4:
+				Escribir 'Tienes 5 oportunides'
+				Mientras contador<5 Hacer
+					Escribir num1,' - ',num2
+					Leer res
+					Si res=num1-num2 Entonces
+						Escribir 'Correcto'
+						puntos <- puntos+1
+						contador <- 10
+					SiNo
+						Escribir 'Incorrecto'
+						contador <- contador+1
+					FinSi
+				FinMientras
+				Borrar Pantalla
+			De Otro Modo:
+				Escribir 'Operador invalido'
+		FinSegun
+	FinPara
+	Escribir 'Has adivinado a ',puntos,' operaciones'
+FinAlgoritmo
