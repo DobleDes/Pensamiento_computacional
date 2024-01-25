@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taqueria "El Fogón"🌮</title>
+</head>
+<body>
+    <header>
+        <!-- Logotipo -->
+        <img src="img/Trompo-de-pastor.png" alt="Logo" width="50px">
+        <!-- Titulo de la página -->
+        <h1>Taquería "El Fogón"</h1>
+        <nav>
+            <!-- Menu -->
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Acerca de Nosotros</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nnDFvSvhaSA?si=oHcGxB0PfiToEHEl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perferendis molestias labore non aut hic alias totam fuga excepturi quasi temporibus, neque repellat corporis, itaque ab consectetur voluptatibus? Enim sed voluptas laudantium maxime eligendi. Officia earum, deserunt sequi voluptatum doloribus illum mollitia sint autem illo dolor ullam architecto obcaecati! Quia cupiditate laudantium voluptates distinctio quis nulla quibusdam deleniti ad beatae quidem, eum praesentium rem esse maxime soluta dolorum non ducimus cum eius saepe, consectetur sapiente magnam. Iure excepturi eligendi fuga provident est cumque pariatur molestias quibusdam perferendis consequatur, impedit laboriosam hic quisquam nesciunt, itaque reprehenderit, dolorem nulla tenetur minima? Quaerat.</p>
+        </section>
+        <section>
+            <h2>Menu</h2>
+            <h3>Sencillos</h3>
+            <ol>
+                <li>Bisteck..............................................$15.00</li>
+                <ul>
+                    <li>Tortilla Grande</li>
+                    <li>Nopales o papas</li>
+                    <li>Salsa pico de gallo</li>
+                </ul>
+                <li>Longaniza.........................................$15.00</li>
+                <li>Suadero.............................................$15.00</li>
+                <li>Chuleta..............................................$20.00</li>
+                <ul>
+                    <li>Papas Fritas</li>
+                    <li>Cebollitas</li>
+                    <li>Nopales</li>
+
+                </ul>
+            </ol>
+
+            <h3>Especialidades</h3>
+            <!-- <dl> es una lista descriptiva -->
+            <dl>
+                <dt>Alambre...............................................$20.00</dt>
+                <dd>Contiene chuleta, bisteck y chile morron</dd>
+                <dt>Campechano.........................................$20.00</dt>
+                <dd>Contiene bisteck y longaniza</dd>
+                <dt>Especial................................................$25.00</dt>
+                <dd>Contiene de todo un poco</dd>
+            </dl>
+
+            <h3>Bebidas</h3>
+            <ul>
+                <li>Refresco..............................................$18.00</li>
+                <li>Tepache...............................................$15.00</li>
+                <li>Aguas de sabor....................................$20.00</li>
+            </ul>
+
+            <h2>Ordena ya! 😋😋</h2>
+            <form action="" method="">
+                Nombre: <input type="text" name="nombre" placeholder="Ejemplo Juan" minlength="3" maxlength="15" size="15" required><br>
+                Recoleccion o envio: <input type="radio" name="envio" value="envio">Envio
+                <input type="radio" name="envio" value="recolectar">Recolecta<br>
+                Telefono: <input type="tel" name="telefono" minlength="10" maxlength="10" placeholder="10 digitos"><br>
+                Correo: <input type="email" name="correo"><br>
+                Direccion: <input type="text" name="direccion" placeholder="calle, numero, colonia, alcaldia" size="100"><br>
+                Si realizaste transferencia, anexa comprobante <input type="file"><br>
+
+                Fecha: <input type="date" name="fecha" value="2024-01-19">
+                Hora: <input type="time" name="hora"><br>
+
+                <p>Ordena!</p>
+                <input type="checkbox" name="bisteck" value="si">Bisteck
+                <input type="number" min="0" max="50"><br>
+                <input type="checkbox" name="longaniza" value="si">Lonagiza
+                <input type="number" min="0" max="50"><br>
+                <input type="checkbox" name="suadero" value="si">Suadero
+                <input type="number" min="0" max="50"><br>
+                <input type="checkbox" name="chuleta" value="si">Chuleta
+                <input type="number" min="0" max="50"><br>
+                <input type="checkbox" name="especial" value="si">Especial
+                <input type="number" min="0" max="50"><br>
+
+                Verdura: <input type="radio" name="complementos" value="junto">Junto
+                <input type="radio" name="complementos" value="junto">A parte <br>
+
+                Salsas: <select name="salsa" >
+                    <option value="">Seleccion la salsa</option>
+                    <option value="verde">Verde</option>
+                    <option value="roja">Roja</option>
+                    <option value="guacamole">Guacamole</option>
+                    <option value="pico">Pico de Gallo</option>
+                    <option value="habanero">Habanero</option>
+                    <option value="todas">De todas</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Ordena ya!🌮">
+                <input type="reset" value="Limpiar">
+
+            </form>
+        </section>
+
+        <footer>
+            <hr>
+            <!-- TABLAS -->
+            <table border="2">
+                <tr>
+                    <th colspan="3">SUCURSALES</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Zona Sur</td>
+                    <td>Sucursal 1</td>
+                    <td>Calle 1 numero 5 Colonia X</td>
+                </tr>
+                <tr>
+                    
+                    <td>Sucursal 2</td>
+                    <td>Calle 2 numero 6 Colonia Y</td>
+
+                </tr>
+                <tr>
+                    <td rowspan="2">Zona Norte</td>
+                    <td>Sucursal 3</td>
+                    <td>Calle 6 Numero 7 Colonia Z</td>
+                </tr>
+                <tr>
+                    <td>Sucursal 4</td>
+                    <td>Calle 7 Numero 8 Colonia W</td>
+                </tr>
+            </table>
+            <!-- REDES SOCIALES -->
+            <a href="https://es-la.facebook.com/" target="_blank"> <img src="img/facebook.png"></a>Facebook
+            <img src="img/device-phone-mobile_.png">5555555555
+            <img src="img/whatsapp.png">Whatsapp
+            <img src="img/correo-electronico-vacio.png">correo@eletr.com            
+        </footer>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
