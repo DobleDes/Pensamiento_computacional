@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+/* "*" asterisco, es el selector universal, en este caso aplica el estilo a todo*/
+
+
+body{
+    background-color: rgb(166, 214, 218);
+}
+
+header{
+    background-color: black;
+}
+h1{
+    color: rgb(158, 211, 209);
+    text-align: center;
+    font-size: 3em;
+    font-family: cursive;
+    letter-spacing: 0.5em;
+    word-spacing: 1em;
+}
+
+nav{
+    background-color: gray;
+}
+
+section{
+    background-color: cornflowerblue;
+    width: 70%;
+}
+
+aside{
+    background-color: deeppink;
+    width: 30%;
+}
+
+footer{
+    background-color: gold;
+}
+
+
+
+
+/*Uso de flexbox */
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+}
